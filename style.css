@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --lightgrey: hsl(217, 12%, 63%);
+  --mediumgrey: hsl(216, 12%, 54%);
+  --darkblue: hsl(213, 19%, 18%);
+  --verydarkblue: hsl(216, 12%, 8%);
+
+  --transition: all ease 1000ms;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: var(--verydarkblue);
+  cursor:pointer;
+}
+
+.rating-contain {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--darkblue);
+  border-radius: 20px;
+  width: 30%;
+}
+
+div.rating-select {
+  margin: 8%;
+}
+
+h1 {
+  color: var(--white);
+}
+
+.rating-select .desc {
+  color: var(--lightgrey);
+  margin-bottom: 2.5rem;
+  position: relative;
+  font-size: 0.955rem;
+    line-height: 1.5;
+}
+
+.rating-select span {
+  background-color: var(--verydarkblue);
+  border-radius: 50%;
+  padding: 0.8rem 1.1rem;
+  position: relative;
+  margin-right: 9%;
+}
+
+button {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 1.2rem;
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+
+.rating-select svg {
+  padding: 1rem;
+  background-color: var(--mediumgrey);
+  border-radius: 50%;
+}
+
+/* hover effects */
+.rating-select span:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    transition: var(--transition);
+}
+button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+.rating-select .rate-p {
+    margin-bottom: 1.8rem;
+    color: var(--lightgrey);
+    position: relative;
+    font-size: 0.955rem;
+      line-height: 1.5;
+}
+/* hide */
+
+.hidden {
+    display: none;
+}
+.hide {
+    visibility: hidden;
+}
+/* sucess */
+
+.rating-sucess {
+    margin: 8%;
+    text-align: center;
+}
+
+.rating-sucess p:first-of-type {
+    color: var(--orange);
+    background-color: var(--verydarkblue);
+    padding: 0.4rem;
+    border-radius: 20px;
+    width: 50%;
+    margin:1rem auto 1rem;
+    font-weight: 500;
+}
+
+.rating-sucess p:last-of-type{
+    color: var(--lightgrey);
+    font-size: 0.955rem;
+    line-height: 1.5;
+}
+
+.error {
+    margin: 0 !important;
+    margin-bottom: 0 !important;
+    position: relative;
+    bottom: 1.2rem;
+    color: red !important;
+    font-size: 0.8rem;
+    
+}
+
+/* attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--white);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.attribution a {
+    color: var(--lightgrey);
+  
+
+}
+
+/* media queries */
+
+@media (max-width : 500px) {
+   
+    .rating-contain {
+        width: 90%;
+    }
+    .rating-select span {
+        margin-right: 6%;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: var(--white);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+}
+
+@media (min-width : 500px) {
+   
+    .rating-contain {
+        width: 50%;
+    }
+    .rating-select span {
+        margin-right: 2%;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: var(--white);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+}
+@media (min-width : 800px) {
+   
+    .rating-contain {
+        width: 50%;
+    }
+    .rating-select span {
+        margin-right: 6%;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: var(--white);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+}
+
+@media (min-width : 1024px) {
+   
+    .rating-contain {
+        width: 40%;
+    }
+    .rating-select span {
+        margin-right: 9%;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: var(--white);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+}
